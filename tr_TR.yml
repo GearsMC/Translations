@@ -1,0 +1,7 @@
+meta: tr_TR
+name: Türkçe (TR)
+default: false
+contents:
+  command.language.form.title: "Dil Menüsü"
+  command.language.form.dropdown: "Bir dil seç:"
+  command.language.changed: "Diliniz başarıyla %0% olarak değiştirildi."

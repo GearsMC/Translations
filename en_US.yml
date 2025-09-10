@@ -1,0 +1,7 @@
+meta: en_US
+name: English (US)
+default: true
+contents:
+  command.language.form.title: "Language"
+  command.language.form.dropdown: "Select a language:"
+  command.language.changed: "Your language has been successfully changed to %0%."
