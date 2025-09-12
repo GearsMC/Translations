@@ -208,6 +208,49 @@ contents:
 
   profile.error.no_active_players: " §cSunucuda aktif oyuncu yok."
   profile.error.player_left: " §cBu oyuncu oyundan çıkmış!"
+  
+  # Voting Hologram
+  voting.hologram.title: "§l §r§e OY SIRALAMASI §6§r"
+  voting.hologram.loading: "§cVeri yükleniyor..."
+  voting.hologram.votes_label: "oy"
+  voting.hologram.unknown: "Bilinmiyor"
+  voting.hologram.command_hint: "§b%0%§f komutu ile oy ver!"
+
+  # Vote Shop
+  vote_shop.title: "§y§r§6Oy Marketi"
+  vote_shop.content.intro: " §aOylarını burada harcayabilirsin!"
+  vote_shop.content.count: " §eOyların: §a%0%"
+  vote_shop.votes_label: "Oy"
+
+  vote_shop.confirm.title: "§y§r§6Oy Marketi - Onay"
+  vote_shop.confirm.content: " §a%0%§r almak için §c%1% oy§r harcayacaksın.\n §cOnaylıyor musun?"
+  vote_shop.confirm.yes: "§aSatın Al"
+  vote_shop.confirm.no: "§cİptal"
+  vote_shop.not_enough: " §cOyların yetersiz."
+  vote_shop.success: " §aBaşarıyla §2%0% §aoy karşılığında §e%1% §aaldın!"
+  vote_shop.op.received: " §aOperatör olarak §e%0% §aaldın!"
+
+  vote_shop.item.turtle_helmet: "Kamplumbağ Kaskı"
+  vote_shop.item.flight_ticket.1h: "1 Saatlik Uçuş Bileti"
+  vote_shop.item.flight_ticket.3h: "3 Saatlik Uçuş Bileti"
+  vote_shop.item.experience_bottle: "XP Şişesi"
+  vote_shop.item.name_tag: "İsim Etiketi"
+  vote_shop.item.goat_horn: "Keçi Boynuzu"
+  vote_shop.item.nether_star: "Nether Yıldızı"
+  vote_shop.item.hard_glass: "Sertleşmiş Cam"
+  vote_shop.item.ender_chest: "Ender Sandığı"
+  vote_shop.item.beacon: "Otomatik Toplayıcı"
+
+  vote_shop.flight_ticket.title: "Uçuş Bileti"
+  vote_shop.flight_ticket.usage: " §7Kullanım: §fSağ tıkla"
+  vote_shop.flight_ticket.effect: " §7Etki: §fUçuş sürenize ekler"
+  vote_shop.flight_ticket.duration: " §7Süre: §6%0%"
+
+  # Voting system messages
+  voting.system.not_voted: " §cHenüz oy vermemişsin. /oy komutunu kullan!"
+  voting.system.already_voted: " §aOyunu verdin ve ödülünü aldın!"
+  voting.system.unreachable: " §cOy sistemi şu anda erişilemiyor. Lütfen daha sonra tekrar dene."
+  voting.system.announcement: " §a%0% oy verdi! /oy ile sen de oy ver!"
 
   # Rütbe
   rank.menu.title: "§bRütbe Menüsü"

@@ -393,3 +393,46 @@ contents:
   shop.sellbar.success_header: " §eSale Completed! All eligible items in the sell bar were sold."
   shop.sellbar.total: "§g Total Earnings: §6%0%"
   shop.sellbar.single.success: " §eItem sold: §8(§c%0% §7x§a%1% §8(§6%2%§8))"
+  
+  # Voting Hologram
+  voting.hologram.title: "§l §r§e VOTE LEADERBOARD §6§r"
+  voting.hologram.loading: "§cLoading data..."
+  voting.hologram.votes_label: "votes"
+  voting.hologram.unknown: "Unknown"
+  voting.hologram.command_hint: "§bVote with %0%!"
+
+  # Vote Shop
+  vote_shop.title: "§y§r§6Vote Shop"
+  vote_shop.content.intro: " §aYou can spend your votes here!"
+  vote_shop.content.count: " §eYour votes: §a%0%"
+  vote_shop.votes_label: "Votes"
+
+  vote_shop.confirm.title: "§y§r§6Vote Shop - Confirm"
+  vote_shop.confirm.content: " §aYou will spend §c%1% vote(s) §rto buy §e%0%§r.\n §cDo you confirm?"
+  vote_shop.confirm.yes: "§aBuy"
+  vote_shop.confirm.no: "§cCancel"
+  vote_shop.not_enough: " §cYou don't have enough votes."
+  vote_shop.success: " §aSuccessfully bought §e%1% §afor §2%0% §avote(s)!"
+  vote_shop.op.received: " §aAs an operator, you received §e%0%!"
+
+  vote_shop.item.turtle_helmet: "Turtle Helmet"
+  vote_shop.item.flight_ticket.1h: "1 Hour Flight Ticket"
+  vote_shop.item.flight_ticket.3h: "3 Hours Flight Ticket"
+  vote_shop.item.experience_bottle: "Experience Bottle"
+  vote_shop.item.name_tag: "Name Tag"
+  vote_shop.item.goat_horn: "Goat Horn"
+  vote_shop.item.nether_star: "Nether Star"
+  vote_shop.item.hard_glass: "Hardened Glass"
+  vote_shop.item.ender_chest: "Ender Chest"
+  vote_shop.item.beacon: "Auto Collector"
+
+  vote_shop.flight_ticket.title: "Flight Ticket"
+  vote_shop.flight_ticket.usage: " §7Usage: §fRight click"
+  vote_shop.flight_ticket.effect: " §7Effect: §fAdds to your flight time"
+  vote_shop.flight_ticket.duration: " §7Duration: §6%0%"
+
+  # Voting system messages
+  voting.system.not_voted: " §cYou haven't voted yet. Use /vote!"
+  voting.system.already_voted: " §aYou've already voted and claimed your reward!"
+  voting.system.unreachable: " §cVoting system is currently unreachable. Please try again later."
+  voting.system.announcement: " §a%0% just voted! Use /vote too!"
