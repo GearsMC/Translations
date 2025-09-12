@@ -1,7 +1,404 @@
 meta: tr_TR
 name: Türkçe (TR)
 default: false
+
 contents:
-  command.language.form.title: "Dil Menüsü"
-  command.language.form.dropdown: "Bir dil seç:"
-  command.language.changed: "Diliniz başarıyla %0% olarak değiştirildi."
+  command.language.form.title: "§gDil Menüsü"
+  command.language.form.dropdown: " §6Bir dil seç:"
+  command.language.form.label: "\n §aLütfen oyun içi dilinizi seçiniz.\n\n§e  Seçtiğiniz dil sizin için oyundaki yazıları ve anlatım biçimini değiştirecektir.\n\n"
+  command.language.changed: " §fDiliniz başarıyla §6%0%§f olarak değiştirildi."
+
+  # Discord-Wiki Komutu
+  command.wiki: " §6§lWiki§r§7: §fgearsmc.org §7adresine gidin ve §eüst menüden §bWiki §7yazısına tıklayın, §aWiki'ye gitmiş olacaksınız."
+  command.discord: " §9§lDiscord§r§7: §fgearsmc.org/discord §7bağlantısını tarayıcınıza yazın ve §bSunucumuza §akatılın§7!"
+
+  # Başarım Komutu
+  achievement.menu.title: "§g§r"
+  achievement.menu.intro: " §fOyundaki hedefleri tamamlayarak §e§oözel ödüller§r§f kazanın!"
+  achievement.menu.completed: " §aTamamlanan: §e%0%§f/§a%1%"
+  achievement.menu.progress: " §6İlerleme: §e%0% "
+  achievement.menu.last_reward: " §3Son Ödül: §b%0%"
+  achievement.menu.progress_bar: " §7%0%"
+  achievement.menu.details_hint: " §fDetaylar için aşağıdaki §ebutonlara§f tıklayın.§r"
+
+  achievement.details.progress_line: " §6§lİlerleme:§r §e%0%§f/§c%1% %2%"
+  achievement.details.status.completed: "§f- §aTamamlandı"
+  achievement.details.status.in_progress: "§f- §eDevam Ediyor"
+  achievement.details.rewards_title: " §6Ödüller:§r"
+  achievement.details.completed_date: " §aTamamlanma Tarihi: §f%0%"
+  achievement.details.claim_prompt: "§e Ödülünü almak için aşağıdaki butona tıkla!"
+  achievement.details.already_claimed: "§b Bu başarımın ödülünü zaten aldın!"
+  achievement.details.button.claim: "§2»§a Ödülü Al"
+  achievement.details.button.claimed: "§4»§c Ödülü Aldın"
+  achievement.details.button.back: "§4«§c Geri Dön"
+
+  achievement.rewards.received: " §6§lAldığınız Ödüller:§r\n%0%"
+  achievement.rewards.not_found: "§7Ödül bilgisi bulunamadı."
+
+  achievement.latest.none: "Henüz yok"
+
+  achievement.id.blok_kazici.name: "Usta Madenci"
+  achievement.id.blok_kazici.desc: "2.000 taş bloğu kaz"
+  achievement.id.blok_kazici.rewards: "   §7-§f Isı Bloğu §7(1 adet)\n   §7-§f Efsanevi Kazma §7(V3, K1) §7(1 adet)\n   §7-§f Dünya Bileti §7(2 adet)\n   §7-§f Nether Bileti §7(1 adet)"
+  achievement.id.patates_ciftcisi.name: "Patates Kralı"
+  achievement.id.patates_ciftcisi.desc: "2.000 patates topla"
+  achievement.id.patates_ciftcisi.rewards: "   §7-§f Sarı Shulker Kutusu §7(1 adet)\n   §7-§f Isı Bloğu §7(3 adet)\n   §7-§f Dünya Bileti §7(4 adet)\n   §7-§f Nether Bileti §7(3 adet)\n   §7-§f End Bileti §7(2 adet)"
+  achievement.id.acimazsiz_savasci.name: "Acımasız Savaşçı"
+  achievement.id.acimazsiz_savasci.desc: "500 oyuncu öldür"
+  achievement.id.acimazsiz_savasci.rewards: "   §7-§f İşaret Işığı (Beacon) §7(1 adet)\n   §7-§f Dünya Bileti §7(5 adet)\n   §7-§f Nether Bileti §7(4 adet)\n   §7-§f End Bileti §7(3 adet)\n   §7-§f Isı Bloğu §7(2 adet)"
+  achievement.id.mr_skye_dostlugu.name: "Mr. Skye'nin Dostu"
+  achievement.id.mr_skye_dostlugu.desc: "Mr. Skye'ı 100 kez besle"
+  achievement.id.mr_skye_dostlugu.rewards: "   §7-§f XP Seviyesi §7(+50)\n   §7-§f Coin §7(+50.000)\n   §7-§f Büyülü Altın Elma §7(5 adet)\n   §7-§f Isı Bloğu §7(2 adet)"
+  achievement.id.isi_bloku_ustasi.name: "Isı Bloğu Ustası"
+  achievement.id.isi_bloku_ustasi.desc: "100 Isı Bloğu kırdır"
+  achievement.id.isi_bloku_ustasi.rewards: "   §7-§f XP Seviyesi §7(+75)\n   §7-§f Coin §7(+100.000)\n   §7-§f Netherite Parçası §7(10 adet)\n   §7-§f Antik Kalıntı §7(5 adet)"
+  achievement.id.oduncu_uzmani.name: "Oduncu Uzmanı"
+  achievement.id.oduncu_uzmani.desc: "1.500 odun bloğu kır"
+  achievement.id.oduncu_uzmani.rewards: "   §7-§f XP Seviyesi §7(+50)\n   §7-§f Coin §7(+25.000)\n   §7-§f Efsanevi Balta §7(V3, K2) §7(1 adet)"
+
+  # Mekan Komutu
+  warp.menu.title: "§g§r§gGezgin Haritası"
+  warp.menu.content: " §aYeni yerleri ziyaret mi etmek istiyorsun? İşte karşında ziyaret edilecek yerler!\n\n §eGezgin Bilgilendirmesi \n\n §cIşınlanma gerçekleşirken hareket etmeyiniz, §l3 saniyelik§r§c süre iptal olur!"
+  warp.menu.error.message: " §cHatalı kullanım."
+
+  warp.button.spawn: "§aAna Mekan"
+  warp.button.kasa: "§bKasalar"
+  warp.button.arena: "§cArena"
+  warp.button.mrskye: "§eMr.Skye"
+  warp.button.ozlmasa: "§eÖzellik Masası"
+  warp.button.magara: "§eMağara"
+  warp.button.agaclar: "§eAğaçlar"
+  warp.button.isikirici: "§eIsı Kırıcı"
+  warp.button.ornyapilar: "§eÖrnek Yapılar"
+  warp.button.balikci: "§eBalıkçı"
+  warp.button.ornjen: "§eÖrnek Jeneratörler"
+
+  warp.countdown.in_progress: "Işınlanıyor"
+  warp.target.message: " §gHedef Bölge: %0%"
+  warp.already.teleporting: " §cŞu an bir ışınlanma gerçekleşiyor..."
+  warp.need.ticket: " §cIşınlanmak için gerekli bilete sahip değilsiniz!"
+  warp.teleported.title: "§a Işınlandın "
+  warp.canceled.move: " §cIşınlanma iptal edildi, hareket ettiniz!"
+  warp.canceled.damage: " §cIşınlanma iptal edildi, hasar aldınız!"
+
+  warp.world.seyahat: "§aDünya"
+  warp.world.nether: "§cNether"
+  warp.world.end: "§5End"
+
+  # Ekonomi
+  economy.mine.balance: " §fHazinen: §6%0% Coin"
+
+  economy.see.balance_other: " §6%0% §fadlı oyuncunun hazinesi: §6%1% Coin"
+
+  economy.error.invalid_player: " §cGeçersiz bir oyuncu ismi girdiniz."
+  economy.error.enter_player_name: " §cLütfen bir oyuncu ismi giriniz."
+
+  economy.top.header: " §l§gZENGINLER SIRALAMASI §r"
+  economy.top.entry: "§6#%0% §f%1% §g» §e%2% Coin"
+  economy.top.your_rank: "§bSenin sıran §7» §3%0%"
+
+  economy.send.limit_exceed: " §cBu miktar coin limitini aşıyor."
+  economy.send.amount_invalid: " §cLütfen sayısal bir rakam giriniz!"
+  economy.send.insufficient: " §cCoin hazinen yetersiz gibi. Lütfen daha fazla coin kazan."
+  economy.send.fail_receiver_limit: " §cCoin gönderme işlemi başarısız. Hedef oyuncunun coin limiti aşılıyor olabilir."
+  economy.send.sent_sender: " §6%0% §fadlı kişiye §6%1% Coin §fgönderdin."
+  economy.send.sent_receiver: " §6%0% §fadlı kişi sana §6%1% Coin §fgönderdi."
+  economy.send.target_never_joined: " §cBu oyuncu oyuna hiç girmemiş."
+  economy.send.target_offline: " §cBelirtilen oyuncu çevrimiçi değil. Lütfen çevrimiçi bir oyuncu ismi giriniz."
+  economy.send.amount_missing: " §cCoin miktarı girmeden coin göndermen mümkün mü?"
+  economy.send.player_missing: " §cOyuncu ismi girmeden coin göndermen mümkün mü?"
+
+  economy.send.self.1: " §cKendine coin göndermek mi? evet kendine coin ekledin ama değişen birşey olmadı!"
+  economy.send.self.2: " §cKendine coin göndermek mi? coinler artık coin oldu."
+  economy.send.self.3: " §cKendine coin göndermek mi? umarım bu coinler seni mutlu eder!"
+  economy.send.self.4: " §cKendine coin göndermek mi? Arkadaşım coinlerin hiçbir zaman cüzdanından ayrılmadı ki!"
+  economy.send.self.5: " §cKendine coin göndermek mi? Um... Tamam... Oldu...!"
+  economy.send.self.6: " §cKendine coin atmak... Kendi kendine alkışlamak gibi, ama daha pahalı!"
+  economy.send.self.7: " §cKendine coin göndermek mi? Yalnızlık seviyen: Finansal özgürlük!"
+  economy.send.self.8: " §cKendine coin göndermek... mr.skye bile 'ne yapıyor bu?' dedi!"
+  economy.send.self.9: " §cKendine coin atmak, kendi doğum gününü kutlamak gibi. Ama pasta yok!"
+
+  # Arkadaş Sistemi
+  friend.menu.title: "§y§r§bArkadaş Menüsü"
+  friend.menu.content: " §aBu menüden arkadaşlarınıza kolayca erişebilirsiniz.\n"
+  friend.menu.button.add: "Arkadaş Ekle"
+  friend.menu.button.list: "Arkadaşların"
+  friend.menu.button.requests: "Arkadaş İsteklerin\n %0% %1% §8isteğin var!"
+
+  friend.error.no_players_to_add: " §cSunucuda arkadaş ekleyebileceğin hiç kimse yok!"
+  friend.error.no_friends: " §cHiç arkadaşın yok!"
+  friend.error.no_requests: " §cHiç arkadaşlık isteğin yok!"
+
+  friend.add.title: "§y§r§bArkadaş Ekle"
+  friend.add.input.prompt: " §aArkadaş eklemek istediğiniz oyuncunun ismini yazın:\n\n §7Aktif oyuncular: §f%0%\n"
+  friend.add.input.placeholder: "Oyuncu ismini buraya yaz..."
+  friend.add.none_online: "Kimse yok"
+  friend.add.error.empty_name: " §cLütfen bir oyuncu ismi girin!"
+  friend.add.error.self: " §cKendine arkadaşlık isteği gönderemezsin!"
+  friend.add.error.not_found: " §4'%0%' §cisimli oyuncu bulunamadı veya çevrim dışı!"
+  friend.add.error.already_friend: " §4%0% §czaten arkadaşın!"
+  friend.add.error.already_sent: " §4%0% §cadlı oyuncuya zaten arkadaşlık isteği gönderilmiş!"
+  friend.add.error.already_from_target: " §4%0% §czaten size arkadaşlık isteği göndermiş! İstekleri kontrol edin."
+  friend.add.success.sent: " §aBaşarılı bir şekilde §2%0% §aadlı kişiye arkadaşlık isteği gönderdin."
+
+  friend.toast.title: "Arkadaşlık Menüsü"
+  friend.toast.request: " §2%0% §aadlı kişi size arkadaşlık isteği gönderdi! /arkadas"
+
+  friend.list.title: "§bArkadaşların"
+  friend.list.content: " §aBuradan arkadaşlarınıza göz atabilir ve işlem yapabilirsiniz."
+  friend.list.entry.format: "%0%\n%1%"
+  friend.status.online: "§aÇevrim içi"
+  friend.status.offline: "§cÇevrim dışı"
+
+  friend.modal.title: "§y§r§bArkadaş Menüsü"
+  friend.modal.confirm_add: " §a%0% adlı kişiyi arkadaş eklemek istediğine emin misin?\n"
+  friend.modal.confirm_remove: " §c%0% adlı kişiyi arkadaşlıktan çıkarmak istediğine emin misin?\n"
+  friend.button.confirm: "§aOnayla"
+  friend.button.reject: "§cReddet"
+  friend.button.back: "§eGeri"
+
+  friend.request.accepted.self: " §aBaşarılı bir şekilde §2%0% §aadlı kişinin isteğini kabul ettin."
+  friend.request.accepted.other: " §2%0% §aadlı kişi arkadaşlık isteğini kabul etti."
+  friend.request.rejected.self: " §aBaşarılı bir şekilde §2%0% §aadlı kişinin isteğini reddettin."
+  friend.request.rejected.other: " §4%0% §cadlı kişi arkadaşlık isteğini reddetti."
+
+  friend.remove.self: " §aBaşarılı bir şekilde §2%0% §aadlı kişiyi arkadaşlık listenden çıkardın."
+  friend.remove.other: " §2%0% §aadlı kişi seni arkadaşlık listenden çıkardı."
+
+  # Profil
+  profile.menu.title: "§bProfil Menüsü"
+  profile.menu.content: " §aBuradan sosyal işlemlerini gerçekleştirebilirsin."
+  profile.menu.button.view_self: "Profiline göz at"
+  profile.menu.button.blocked_list: "Engellediğin kişilere göz at"
+
+  profile.view.title.self: "§y§r§bProfilin"
+  profile.view.title.other: "§a%0%§b adlı kişinin profili"
+  profile.view.header: " §aMerhaba, profile dair bilgiler burada!"
+  profile.view.rank: " §3Rütbe §7» §f%0% §r"
+  profile.view.money: " §3Coin §7» §e%0% §6Coin"
+  profile.view.biography: " §3Biyografisi §7» §e%0%"
+  profile.view.device: " §3Cihaz §7» §f%0%"
+  profile.view.first_login: " §3İlk Giriş Tarihi §7» §f%0%"
+  profile.view.play_time: " §3Oynama Süresi §7» §d%0%"
+  profile.view.achievements: " §3Başarımlar §7» §f%0%§7/§f%1% §3(§f%2%%%§3)"
+  profile.view.kdr: " §3Öldürme: §c%0% §3| Ölüm: §c%1% §3| K/D: §a%2%"
+  profile.view.button.change_bio: "Biyografini Değiştir"
+  profile.view.button.view_other: "Başkasının Profiline Bak"
+  profile.view.button.send_tpa: "Işınlanma İsteği Gönder"
+  profile.view.button.block: "Engelle"
+
+  profile.lookup.title: "§bBaşkasının Profiline Bak"
+  profile.lookup.dropdown: " §aOyuncu seç:"
+
+  profile.bio.title: "§bBiyografi Değiştir"
+  profile.bio.input: " §aBiyografini gir:"
+  profile.bio.error.empty: " §cBiyografi boş olamaz!"
+  profile.bio.error.min: " §cBiyografi en az 5 karakter olmalıdır! Mevcut: %0% karakter"
+  profile.bio.error.max: " §cBiyografi en fazla 50 karakter olabilir! Mevcut: %0% karakter"
+  profile.bio.success: " §aBiyografin başarılı bir şekilde §2%0% §aolarak değiştirildi."
+
+  profile.block.title: "§bEngel Menüsü"
+  profile.block.confirm.add: " §c%0% adlı oyuncuyu engellemek istiyor musun?"
+  profile.block.confirm.remove: " §a%0% adlı oyuncunun engelini kaldırmak istiyor musun?"
+  profile.block.success.block: " §aBaşarılı bir şekilde §2%0% §aadlı oyuncuyu engellediniz."
+  profile.block.success.unblock: " §aBaşarılı bir şekilde §2%0% §aadlı oyuncunun engelini kaldırdınız."
+  profile.block.list.title: " §aEngellenenler Listesi"
+  profile.block.list.content: ""
+  profile.block.none: " §cHiçbir oyuncuyu engellememişsiniz."
+
+  profile.error.no_active_players: " §cSunucuda aktif oyuncu yok."
+  profile.error.player_left: " §cBu oyuncu oyundan çıkmış!"
+
+  # Rütbe
+  rank.menu.title: "§bRütbe Menüsü"
+  rank.menu.current_rank: " §aMevcut Rütben: §e%0%"
+  rank.menu.current_rank.none: "§cYok"
+  rank.menu.next_rank: " §6Sonraki Rütben: §e%0%"
+  rank.menu.no_higher_rank: " §cDaha yüksek rütbe bulunamadı!"
+
+  rank.menu.requirements.title: " §gGereksinimler:"
+  rank.menu.requirements.coin: " §a%0% §6Coin"
+  rank.menu.requirements.island_level: " §2%0% §9Seviye"
+
+  rank.menu.rewards.title: " §aÖdüller"
+  rank.menu.rewards.effect: "%0%§f Efekti"
+  rank.menu.rewards.item.format: "§s%0%x §f%1%"
+  rank.menu.rewards.item.ticket.overworld: "§s%0%x §aDünya §gBileti"
+  rank.menu.rewards.item.ticket.nether: "§s%0%x §cNether §gBileti"
+  rank.menu.rewards.item.ticket.end: "§s%0%x §fEnd §gBileti"
+  rank.menu.rewards.warning_effects_cleared: " §cUnutmayın! Rütbeyi atlarken kazandığınız efektler silinir!"
+
+  rank.menu.button.rank_up: "Rütbeyi al"
+  rank.menu.button.back: "§4«§c Geri Dön"
+
+  rank.up.success: " §aBaşarılı bir şekilde §2%0% §arütbesine yükseldiniz."
+  rank.up.fail.requirements: " §cBu rütbeyi almak için gereksinimleri karşılamıyorsunuz."
+  rank.up.fail.max: " §cZaten en yüksek rütbedesiniz!"
+
+  # Market (Shop)
+  shop.main.title: "§g§r"
+  shop.main.content: "\n§6 §eHoş Geldiniz! §6\n§a Burada ihtiyacınız olan tüm ürünleri bulabilirsiniz.\n"
+  shop.main.button.cart_filled: "§bSepet\n§e%0% §sadet ürün"
+  shop.main.button.cart_empty: "§bSepet\n§sSepetiniz Boş"
+  shop.main.button.search: "§aÜrün\nAra"
+  shop.main.button.suggest: "§aÜrün\nÖnerisi"
+
+  shop.category.title: "§y§r§aMarket Alışveriş"
+  shop.category.content: " §aHangi ürünleri satın almak istiyorsunuz?"
+  shop.category.item_button: "§a%0%\n§gAlış Fiyat: %1%"
+  shop.button.back: "§4«§c Geri Dön"
+
+  shop.price.discounted: "§c§m%0%§r §a%1% §7(-%%%2%)"
+  shop.price.normal: "§g%0%"
+  shop.price.discounted_coin: "§c§m%0%§r §a%1% Coin §7(-%%%2%)"
+  shop.price.normal_coin: "%0% Coin"
+
+  shop.item.title: "§y§r§e%0% §f- §g %1%"
+  shop.item.content: "\n§a Ürünü nasıl satın almak istiyorsunuz? Sepetinize mi eklensin yoksa şimdi mi satın almak istiyorsunuz?\n\n"
+  shop.item.button.add_to_cart: "§aSepete Ekle"
+  shop.item.button.buy_now: "§aŞimdi Al"
+
+  shop.add_form.title: "§e%0% §f- §g %1% Coin"
+  shop.add_form.label: " §eSepete eklemek istediğiniz ürün adedini aşağıya giriniz.\n\n §fEn fazla 480 adet ekleyebilirsiniz. Lütfen almak istediğiniz miktarı dikkatlice yazın."
+  shop.add_form.input: " §aKaç adet eklemek istiyorsunuz?"
+  shop.common.placeholder.number: "Lütfen bir sayı girin"
+  shop.cart.error.amount_range: "§c Lütfen 1 ile 480 arası bir sayı girin."
+  shop.cart.added: " §eBaşarılı bir şekilde §g%0% §a%1%x§e adlı ürünü sepetinize eklediniz."
+
+  shop.buy.now.label: " §aLütfen şimdi almak istediğiniz miktarı girin:"
+  shop.buy.now.input: " §6Kaç tane almak istiyorsun?"
+  shop.buy.now.toggle: " §gBir miktar almak istemiyorum; coinlerim ne kadar yetiyorsa o kadar al!§c (Limit 480)"
+  shop.buy.now.confirm: " §fMerhaba %0%!\n\n §gBirazdan §e%1% adet %2% §gsatın alacaksın. Yani toplamda §e%3% Coin §golacak.\n\n §aSatın almak için 'Gönder' butonuna basabilirsin. İyi alışverişler :)"
+  shop.buy.now.error.insufficient: " §cBakiyeniz bu üründen hiç almanıza yetmiyor."
+
+  shop.buy.error.not_enough_money: " §cCoinlerin yetersiz olduğu için %0% adlı ürünü satın alamadın."
+  shop.buy.error.item_create_failed: " §cÖğe oluşturulamadı. §4%0%"
+  shop.buy.error.inventory_full: " §cEnvanterin dolu §f%0% §cadlı ürünü satın alamadın."
+  shop.buy.success: " §aBaşarılı bir şekilde §2%0% §a%1%x§a adlı ürünü satın aldınız."
+
+  shop.cart.title: "§y§r§aMarket §f- §aSepet"
+  shop.cart.item_entry: "§l§e%0%x §r§f%1%\n§r§6Fiyat: §e%2% Coin"
+  shop.cart.button.checkout: "§aSepet Tamam!"
+  shop.cart.button.clear: "§cSepeti Temizle!"
+  shop.cart.content: "\n §aSepeti Tamamlamak için en aşağıda bulunan §e'Sepet Tamam!'§a tıklayınız!\n §cÜrünleri Kaldırmak için ürünlere tıklayınız!\n §gToplam Fiyat: %0% Coin"
+
+  shop.cart.empty.title: "§y§r§aMarket §f- §aSepet"
+  shop.cart.empty.content: " §aSepetiniz şu anda boş, alışverişe devam etmek ister misiniz?"
+  shop.cart.empty.button.continue: "§aAlışverişe Devam!"
+
+  shop.cart.confirm.title: "§y§r§aMarket §f- §aSatın Almayı Onayla"
+  shop.cart.confirm.content: " §aSepeti tamamlamak istediğinizden emin misiniz?"
+
+  shop.cart.manage.title: "§y§r§aMarket §f- §aSepet Yönetimi"
+  shop.cart.remove.one.confirm: " §aSepetinizde bulunan §g%0% §6x%1% §aadlı ürünü kaldırmak istediğinize emin misiniz?"
+  shop.cart.remove.one: " §g%0% §6x%1% §esepetten kaldırıldı."
+  shop.cart.remove.all.confirm: " §aSepetinizde toplam §g'%0%' §afarklı ürün bulunmaktadır. Tüm ürünleri temizlemek istiyor musunuz?"
+  shop.cart.remove.all.success: " §eSepetteki tüm ürünler temizlendi."
+
+  shop.button.yes: "§aEvet"
+  shop.button.no: "§cHayır"
+  shop.button.no_red: "§4Hayır"
+  shop.button.ok: "§aTamam"
+
+  shop.search.title: "§g§r§gÜrün Arama"
+  shop.search.input: " §gLütfen aramak istediğiniz ürünü yazın:"
+  shop.search.placeholder: "Örn: Elmas"
+  shop.search.error.empty: "§c Lütfen aramak istediğiniz ürünü yazın."
+  shop.search.results.title: "§g§r§gArama Sonuçları"
+  shop.search.results.found: " §gArama sonuçlarınızda bu ürünleri bulduk!:"
+  shop.search.results.not_found: " §cAradığınız ürün bulunamadı."
+  shop.search.results.entry: "§a%0%\n§gFiyat: %1% Coin"
+
+  shop.suggest.title: "§g§r§gÜrün Önerilendirme"
+  shop.suggest.content: " §aEşya önerisi yapmadan önce lütfen aşağıdaki bilgileri okuyun:\n§e1. Eşya adını İngilizce olarak girmelisiniz.\n§e2. Eşya adlarını bulmak için:\n   - '/give' komutunu kullanabilirsiniz.\n   - Minecraft Wiki'yi ziyaret edebilirsiniz.\n §cÖneri Kuralları:\n§71. Zaten markette olan eşyaları öneremezsiniz.\n§72. Daha önce reddedilen eşyaları tekrar öneremezsiniz.\n§73. Uygunsuz veya oyun dengesini bozacak eşyalar önermekten kaçının.\n"
+  shop.suggest.input.item: "§e Önermek istediğiniz ürün adı:§r"
+  shop.suggest.input.reason: "§e Öneri sebebiniz (isteğe bağlı):§r"
+  shop.suggest.placeholder.reason: "Bu eşyanın neden eklenmesi gerektiğini açıklayın"
+  shop.suggest.error.invalid_input: "§c Lütfen geçerli bir ürün adı veya ID girin."
+  shop.suggest.error.invalid_name: "§c Geçersiz eşya adı veya ID. Lütfen doğru bir eşya adı veya ID girin."
+  shop.suggest.error.invalid_item: "§c Geçersiz ürün. Lütfen doğru bir ürün adı veya ID girin."
+  shop.suggest.error.already_exists: "§c Bu ürün zaten mağazada mevcut!"
+  shop.suggest.error.blocked: "§c Bu ürün için öneri yapılamaz."
+  shop.suggest.error.pending: "§c Bu eşya için zaten bir öneri beklemede. Lütfen incelenmesini bekleyin."
+  shop.suggest.success: " §e'%0%' §fiçin öneriniz incelenmek üzere gönderildi."
+
+  shop.sell.title: "§g§r"
+  shop.sell.content: " §aSatıcıya hoş geldin! Bu kısımdan satış türünü seçebilirsin. İyi satışlar!"
+  shop.sell.button.sell_all: "§gHer şeyi Sat\n§6%0%"
+  shop.sell.button.selective: "§gSeçerek Sat"
+  shop.sell.button.quick: "§gHızlı Satış\n§ex%0%, §6%1%"
+  shop.sell.button.quick_simple: "§gHızlı Satış"
+  shop.sell.button.list: "§gSatış Listesi"
+
+  shop.sell.menu.title_all: "§y§r§gSatış Menüsü §f- §aHer şeyi Sat"
+  shop.sell.none_found: " §cSatılacak bir ürün bulunamadı. Satış Listesine yönlendiriliyorsunuz..."
+  shop.sell.none_found_simple: " §cSatılacak bir ürün bulunamadı."
+  shop.sell.none_found_redirect: "§c Satılacak bir ürün bulunamadı. Satış menüsüne yönlendiriliyorsunuz..."
+  shop.sell.confirm_all: "\n§a Envanterinizde bulunan ürünlerin toplam fiyatı §6%0% coindir.\n\n §aAşağıda bulunan ürünleri satmak istediğinize emin misiniz?\n\n"
+  shop.sell.button.confirm_all: "§aEvet, sat!"
+  shop.sell.button.cancel_all: "§cHayır, iptal et."
+
+  shop.sell.price_line: "§6Fiyat: §e%0% Coin"
+  shop.sell.price_diff.plus: "§a(+)%0%"
+  shop.sell.price_diff.minus: "§c(-)%0%"
+  shop.sell.item_entry: "§l§e%0%x §r§f%1%\n§r%2%"
+  shop.sell.error.not_enough_in_inventory: " §cEnvanterinizde yeterli miktarda §e%0% §cbulunmuyor. §cİşlem iptal edildi."
+  shop.sell.detail_entry: " §e%0% §7x§a%1% §8(§6%2%§8)"
+  shop.sell.success_summary: " §eSatış Tamamlandı! Envanterdeki tüm uygun ürünler başarıyla satıldı.\n\n§g Toplam Kazanç: §6%0%"
+
+  shop.sell.select.title: "§g§r§aSeçerek Sat"
+  shop.sell.select.content: " §aSatmak istediğiniz ürünleri seçin ve devam edin."
+  shop.sell.select.button.proceed: "§aDevam Et"
+  shop.sell.select.item.selected: "§a[✓] §f%0% §7x§a%1% §8(§6%2%§8)"
+  shop.sell.select.item.unselected: "§c[ ] §f%0% §7x§a%1% §8(§6%2%§8)"
+  shop.sell.select.error.none_selected: "§c Lütfen en az bir ürün seçin."
+
+  shop.sell.quantities.title: "§g§r§aAdet Belirleme"
+  shop.sell.quantities.label: " §aSeçtiğiniz her ürün için satılacak adetleri girin."
+  shop.sell.quantities.input: "§e %0% için miktar (En fazla: %1%)"
+  shop.sell.quantities.error.range: "§c %0% için geçersiz miktar! En fazla %1% girebilirsiniz."
+  shop.sell.quantities.confirm.title: "§g§r§aSatışı Onayla"
+  shop.sell.quantities.confirm.content: " §aToplam satış tutarı: §6%0%\n§aAşağıdaki ürünler satılacak:"
+
+  shop.sell.quick.error.no_item: "§c Elinizde ürün yok."
+  shop.sell.quick.error.not_sellable: "§c Elinizdeki ürün satılamıyor."
+  shop.sell.quick.success: " §aHızlı satış tamamlandı: §f%0% §7x§a%1% §8(§6%2%§8)"
+
+  shop.sell.list.title: "§g§r§aSatış Listesi"
+  shop.sell.list.content: " §aSatılabilir ürünlerin liste fiyatları:"
+  shop.sell.list.entry: "§f%0% §7(§6%1%§7)"
+
+  shop.sell.list.category.title: "§g§r§gSatış Listesi - %0%"
+  shop.sell.list.category.content: " §aBu kategoride ürünlerin satış fiyatları belirlenmiştir. Bu fiyatlar satış çubuğunda geçerlidir.\n\n §eKategorideki ürünleri satmak için lütfen ürünleri envanterinizde bulundurun.\n\n"
+  shop.sell.list.category.price.up: "§c§m%0%§r §a%1% §7(+%%%2%)"
+  shop.sell.list.category.price.down: "§c§m%0%§r §c%1% §7(%2%%)"
+  shop.sell.list.category.price.normal: "§6%0%"
+  shop.sell.list.category.item_button: "§a%0%\n%1%"
+
+  shop.sell.details.title: "§g§r§gÜrün Detayları"
+  shop.sell.details.price.up: "§c§m%0%§r §a%1% Coin §7(+%%%2% Mevsimsel)"
+  shop.sell.details.price.down: "§c§m%0%§r §c%1% Coin §7(%2%% Mevsimsel)"
+  shop.sell.details.price.normal: "§6%0% Coin"
+  shop.sell.details.content: "§aÜrün: §e%0%\n§aSatış Fiyatı: %1%\n\n§7Bu ürünü satmak için envanterinizde bulundurmanız ve satış menüsünden satmanız gerekmektedir."
+
+  shop.sellbar.title: "§y§r"
+  shop.sellbar.container.barrel: "Varildeki"
+  shop.sellbar.container.chest: "Sandıktaki"
+  shop.sellbar.content: "§e%0% satılabilir ürünler:\n\n§a%1% çeşit ürün\n§eToplam Değer: §6%2% Coin\n\n§gSeçenekleriniz:"
+  shop.sellbar.button.sell_all: "§aHepsini Sat\n§6%0% Coin"
+  shop.sellbar.button.item_entry: "§e%0%\n§7x%1% - §6%2% Coin"
+  shop.sellbar.none_found: "§c Satış çubuğu satılacak ürünleri bulamadı."
+  shop.sellbar.error.container: "§c Sandık veya varil bulunamadı veya erişilemiyor."
+  shop.sellbar.error.revalidate: "§c Satış çubuğu seçilmiş ürünleri bulamadı. Lütfen tekrar deneyin."
+  shop.sellbar.success_header: " §eSatış Tamamlandı! Satış çubuğundaki tüm uygun ürünler başarıyla satıldı."
+  shop.sellbar.total: "§g Toplam Kazanç: §6%0%"
+  shop.sellbar.single.success: " §eÜrün satıldı: §8(§c%0% §7x§a%1% §8(§6%2%§8))"
+
+
+
+
+
+
+
+
+
