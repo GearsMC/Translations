@@ -252,6 +252,73 @@ contents:
   voting.system.unreachable: " §cOy sistemi şu anda erişilemiyor. Lütfen daha sonra tekrar dene."
   voting.system.announcement: " §a%0% oy verdi! /oy ile sen de oy ver!"
 
+  # Helper Allay
+  helperallay.name: "Yardımcı Allay"
+  helperallay.tag.mode.harvest: "Hasat"
+  helperallay.tag.mode.stone: "Taş"
+  helperallay.tag.status.deposit: "Depo"
+  helperallay.tag.status.silent: "Sessiz"
+  helperallay.error.chest.too_far: " §cBağlı sandık çok uzakta, otomatik depo durduruldu!"
+  helperallay.error.chest.unloaded: " §cBağlı sandık chunk'ı yüklü değil, otomatik depo durduruldu!"
+  helperallay.error.chest.missing: " §cSandığı yerinde bulamadım, sanırım taşındı! Otomatik depo kapatıldı."
+  helperallay.tag.helping: "Yardım ediyor: %0%"
+
+  helperallay.state.on: "Açık"
+  helperallay.state.off: "Kapalı"
+  helperallay.state.yes: "Bağlı"
+  helperallay.state.no: "Yok"
+
+  helperallay.form.main.title: "§6Yardımcı Allay"
+  helperallay.form.main.content: " §aAllay olarak sana nasıl yardım edebilirim?\n\n §aSeçeneklerden birini seç!"
+  helperallay.form.main.button.harvest: "Hasat Modu: %0%"
+  helperallay.form.main.button.mining: "Taş Kazma Modu: %0%"
+  helperallay.form.main.button.tools: "Alet Envanteri"
+  helperallay.form.main.button.inventory: "Envanterimi Aç"
+  helperallay.form.main.button.config: "Ayarlar / Lojistik"
+  helperallay.error.busy: "Allay şu anda başka bir oyuncuya yardım ediyor."
+  helperallay.error.generic: "Bir hata oluştu."
+
+  helperallay.form.config.title: "§6Allay Ayarları"
+  helperallay.form.config.content: "§7Sandık: %0%\n§7Oto Aktarım: %1%\n§7Sessiz Mod: %2%"
+  helperallay.form.config.button.autodeposit: "Oto Aktarım: %0%"
+  helperallay.form.config.button.linkchest: "Sandık Bağla (Yakın)"
+  helperallay.form.config.button.silent: "Sessiz Mod: %0%"
+
+  helperallay.mode.harvest.enabled: "§a[Allay] Hasat modu açıldı."
+  helperallay.mode.harvest.disabled: "§c[Allay] Hasat modu kapatıldı."
+  helperallay.mode.harvest.force_disable_for_mining: "§c[Allay] Hasat modu kapatıldı (Taş kazma modu açılıyor)."
+  helperallay.mode.mining.enabled: "§7[Allay] Taş kazma modu açıldı."
+  helperallay.mode.mining.disabled: "§7[Allay] Taş kazma modu kapatıldı."
+  helperallay.mode.mining.force_disable_for_harvest: "§7[Allay] Taş kazma modu kapatıldı (Hasat modu açılıyor)."
+
+  helperallay.warn.no_hoe: "§e[Allay] Hasat için çapa yok."
+  helperallay.warn.no_pickaxe: "§e[Allay] Kazma yok, blok kıramıyorum."
+  helperallay.info.chest.linked: "§7[Allay] En yakın sandık bağlandı: §e%0%, %1%, %2%"
+  helperallay.error.no_chest_near: "§c[Allay] Yakında sandık yok."
+  helperallay.info.chest.bound: "§7[Allay] Sandık bağlandı."
+  helperallay.info.deposited: "§7[Allay] Eşyalar sandığa aktarıldı."
+
+  helperallay.toggle.silent: "§7[Allay] Sessiz mod: %0%"
+  helperallay.toggle.autodeposit: "§7[Allay] Otomatik aktarım: %0%"
+
+  helperallay.inventory.empty: " §aEnvanterim boş!"
+  helperallay.inventory.title: "§6Allay Envanteri"
+  helperallay.tools.title: "§6Allay Alet Envanteri"
+  helperallay.inventory.header: " §gEnvanterim:"
+
+  helperallay.tool.break.pickaxe: "§c[Allay] Kazma kırıldı!"
+  helperallay.tool.break.hoe: "§c[Allay] Çapa kırıldı!"
+  helperallay.warn.chest.full: "§c[Allay] Sandık dolu, otomatik aktarım kapatıldı."
+
+  helperallay.tag.mode.stay: "Bekleme"
+  helperallay.tag.status.stay: "Bekliyor"
+  helperallay.form.main.button.stay: "Bekle: %0%"
+  helperallay.mode.stay.enabled: "§b[Allay] Bekleme modu açıldı. Burada hafifçe süzülecek."
+  helperallay.mode.stay.disabled: "§b[Allay] Bekleme modu kapatıldı. Takip etmeye devam ediyor."
+  helperallay.form.config.button.stay: "Bekleme Modu: %0%"
+  helperallay.state.enable: "Aç"
+  helperallay.state.disable: "Kapat"
+
   # Rütbe
   rank.menu.title: "§bRütbe Menüsü"
   rank.menu.current_rank: " §aMevcut Rütben: §e%0%"
