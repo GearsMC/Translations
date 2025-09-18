@@ -253,7 +253,6 @@ contents:
   voting.system.announcement: " §a%0% oy verdi! /oy ile sen de oy ver!"
 
   # Helper Allay
-  helperallay.name: "Yardımcı Allay"
   helperallay.tag.mode.harvest: "Hasat"
   helperallay.tag.mode.stone: "Taş"
   helperallay.tag.status.deposit: "Depo"
@@ -268,21 +267,20 @@ contents:
   helperallay.state.yes: "Bağlı"
   helperallay.state.no: "Yok"
 
-  helperallay.form.main.title: "§6Yardımcı Allay"
-  helperallay.form.main.content: " §aAllay olarak sana nasıl yardım edebilirim?\n\n §aSeçeneklerden birini seç!"
+  helperallay.form.main.content: "\n §bYardımcı bugün ne yapabilir?\n"
   helperallay.form.main.button.harvest: "Hasat Modu: %0%"
   helperallay.form.main.button.mining: "Taş Kazma Modu: %0%"
   helperallay.form.main.button.tools: "Alet Envanteri"
   helperallay.form.main.button.inventory: "Envanterimi Aç"
-  helperallay.form.main.button.config: "Ayarlar / Lojistik"
+  helperallay.form.main.button.silent: "Sessiz Mod: %0%"
+  helperallay.form.main.button.chest: "Sandık"
   helperallay.error.busy: "Allay şu anda başka bir oyuncuya yardım ediyor."
   helperallay.error.generic: "Bir hata oluştu."
 
-  helperallay.form.config.title: "§6Allay Ayarları"
-  helperallay.form.config.content: "§7Sandık: %0%\n§7Oto Aktarım: %1%\n§7Sessiz Mod: %2%"
+  helperallay.form.config.chest.title: "§6Sandık Ayarları"
+  helperallay.form.config.chest.content: "§7Sandık: %0%\n§7Oto Aktarım: %1%"
   helperallay.form.config.button.autodeposit: "Oto Aktarım: %0%"
   helperallay.form.config.button.linkchest: "Sandık Bağla (Yakın)"
-  helperallay.form.config.button.silent: "Sessiz Mod: %0%"
 
   helperallay.mode.harvest.enabled: "§a[Allay] Hasat modu açıldı."
   helperallay.mode.harvest.disabled: "§c[Allay] Hasat modu kapatıldı."
@@ -318,6 +316,10 @@ contents:
   helperallay.form.config.button.stay: "Bekleme Modu: %0%"
   helperallay.state.enable: "Aç"
   helperallay.state.disable: "Kapat"
+
+  helperallay.common.level_required: "Seviye %0%"
+  helperallay.error.level_required_config: "Bu menü için Yardımcı Seviye %0% gerekli!"
+  helperallay.inventory.locked_slot: "Kilitli Slot (Seviye yükselt)"
 
   # Rütbe
   rank.menu.title: "§bRütbe Menüsü"

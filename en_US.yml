@@ -438,7 +438,6 @@ contents:
   voting.system.announcement: " §a%0% just voted! Use /vote too!"
 
   # Helper Allay
-  helperallay.name: "Helper Allay"
   helperallay.tag.mode.harvest: "Harvest"
   helperallay.tag.mode.stone: "Stone"
   helperallay.tag.status.deposit: "Depot"
@@ -453,21 +452,20 @@ contents:
   helperallay.state.yes: "Linked"
   helperallay.state.no: "None"
 
-  helperallay.form.main.title: "§6Helper Allay"
-  helperallay.form.main.content: " §aHow can I assist you?\n\n §aChoose an option!"
+  helperallay.form.main.content: " §bHelper How can I assist you?"
   helperallay.form.main.button.harvest: "Harvest Mode: %0%"
   helperallay.form.main.button.mining: "Stone Mining Mode: %0%"
   helperallay.form.main.button.tools: "Tool Inventory"
   helperallay.form.main.button.inventory: "Open Inventory"
-  helperallay.form.main.button.config: "Settings / Logistics"
+  helperallay.form.main.button.silent: "Silent Mode: %0%"
+  helperallay.form.main.button.chest: "Chest"
   helperallay.error.busy: "Allay is currently helping another player."
   helperallay.error.generic: "An error occurred."
 
-  helperallay.form.config.title: "§6Allay Settings"
-  helperallay.form.config.content: "§7Chest: %0%\n§7Auto Deposit: %1%\n§7Silent Mode: %2%"
+  helperallay.form.config.chest.title: "§6Chest Settings"
+  helperallay.form.config.chest.content: "§7Chest: %0%\n§7Auto Deposit: %1%"
   helperallay.form.config.button.autodeposit: "Auto Deposit: %0%"
   helperallay.form.config.button.linkchest: "Link Chest (Near)"
-  helperallay.form.config.button.silent: "Silent Mode: %0%"
 
   helperallay.mode.harvest.enabled: "§a[Allay] Harvest mode enabled."
   helperallay.mode.harvest.disabled: "§c[Allay] Harvest mode disabled."
@@ -503,3 +501,7 @@ contents:
   helperallay.form.config.button.stay: "Stay Mode: %0%"
   helperallay.state.enable: "Enable"
   helperallay.state.disable: "Disable"
+
+  helperallay.common.level_required: "Level %0%"
+  helperallay.error.level_required_config: "Helper Level %0% required for this menu!"
+  helperallay.inventory.locked_slot: "Locked Slot (Upgrade level)"
