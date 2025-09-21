@@ -506,6 +506,23 @@ contents:
   shop.sellbar.total: "§g Toplam Kazanç: §6%0%"
   shop.sellbar.single.success: " §eÜrün satıldı: §8(§c%0% §7x§a%1% §8(§6%2%§8))"
 
+  # Zaman birimleri
+  time.zero: "0 sn"
+  time.unit.day: "gün"
+  time.unit.days: "gün"
+  time.unit.hour: "saat"
+  time.unit.hours: "saat"
+  time.unit.minute: "dakika"
+  time.unit.minutes: "dakika"
+  time.unit.second: "saniye"
+  time.unit.seconds: "saniye"
+  time.unit.day.short: "g"
+  time.unit.hour.short: "sa"
+  time.unit.minute.short: "dk"
+  time.unit.second.short: "sn"
+  # 1 -> kısa, diğer değerler -> uzun
+  time.format.short: "0"
+
 
 
 

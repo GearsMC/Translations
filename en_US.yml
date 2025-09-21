@@ -505,3 +505,20 @@ contents:
   helperallay.common.level_required: "Level %0%"
   helperallay.error.level_required_config: "Helper Level %0% required for this menu!"
   helperallay.inventory.locked_slot: "Locked Slot (Upgrade level)"
+  
+  # Time units
+  time.zero: "0 seconds"
+  time.unit.day: "day"
+  time.unit.days: "days"
+  time.unit.hour: "hour"
+  time.unit.hours: "hours"
+  time.unit.minute: "minute"
+  time.unit.minutes: "minutes"
+  time.unit.second: "second"
+  time.unit.seconds: "seconds"
+  time.unit.day.short: "d"
+  time.unit.hour.short: "h"
+  time.unit.minute.short: "m"
+  time.unit.second.short: "s"
+  # 1 -> short, anything else -> long
+  time.format.short: "0"
