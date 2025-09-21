@@ -1,4 +1,4 @@
-# GearsMC Skyblock Translations / GearsMC SkyblockÇevirileri
+# Translations
 
 ## English
 
