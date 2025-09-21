@@ -6,7 +6,6 @@
 
 - Purpose: Central place for GearsMC Skyblock server plugin translations.
 - Scope: Server messages and plugin texts shown in chat, UI forms, and logs.
-- Formats: `.lang` files (e.g., `en_US.lang`, `tr_TR.lang`).
 
 ### Contributing
 
@@ -25,7 +24,6 @@
 
 - Amaç: GearsMC Skyblock sunucu eklentisi çevirilerinin merkezi.
 - Kapsam: Sohbet, formlar ve loglarda görünen sunucu mesajları ve eklenti metinleri.
-- Formatlar: `.lang` dosyaları (örn. `en_US.lang`, `tr_TR.lang`).
 
 ### Katkıda Bulunma
 
